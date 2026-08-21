@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Reviews Plus - Google compatible WordPress Reviews for any content
  * Description: Add rich reviews to posts, pages or any custom post type. Reviews summary compatible with SERP.
- * Version: 1.4.1
+ * Version: 1.4.2
  * Author: impleCode
  * Author URI: https://implecode.com
  * Text Domain: reviews-plus

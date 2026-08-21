@@ -2,8 +2,9 @@
 Contributors: impleCode, ndre
 Tags: comments, google rating, product review, rating, review, reviews, star rating, testimonial, testimonials, user rating, wp rating, wp review
 Requires at least: 3.5
-Tested up to: 6.9
-Stable tag: 1.4.1
+Requires PHP: 7.4
+Tested up to: 7.1
+Stable tag: 1.4.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -87,6 +88,10 @@ Reviews Plus reviews are located in a separate screen for each post type. You wi
 4. Reviews admin screen for custom post type
 
 == Changelog ==
+
+= 1.4.2 =
+
+* WP compatibility update
 
 = 1.4.1 =
 

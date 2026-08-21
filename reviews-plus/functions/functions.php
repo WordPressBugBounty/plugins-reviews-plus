@@ -236,13 +236,23 @@ if ( ! function_exists( 'ic_time_ago' ) ) {
 }
 
 if ( ! function_exists( 'ic_filemtime' ) ) {
+    /**
+     * Gets a cache-busting timestamp query string for a file.
+     *
+     * @param string $path File path.
+     *
+     * @return string|null
+     */
+    function ic_filemtime( $path, $time_only = false ) {
+        if ( file_exists( $path ) ) {
+            if ( $time_only ) {
+                return filemtime( $path );
+            }
+            return '?timestamp=' . filemtime( $path );
+        }
 
-	function ic_filemtime( $path ) {
-		if ( file_exists( $path ) ) {
-			return '?timestamp=' . filemtime( $path );
-		}
-	}
-
+        return null;
+    }
 }
 
 function ic_get_comment_type( $object = null, $post_type = null ) {
